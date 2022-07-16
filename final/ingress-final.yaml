@@ -6,13 +6,13 @@ metadata:
     nginx.ingress.kubernetes.io/ingress-final: /$1
 spec:
   rules:
-    - host: final-assessment.local
+    - host: final.local
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: final-assessment
+                name: final
                 port:
                   number: 80
